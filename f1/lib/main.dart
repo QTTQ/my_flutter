@@ -54,9 +54,31 @@
 //   }
 // }
 
-//酷炫的路由动画-1
+// //酷炫的路由动画-1
+// import 'package:flutter/material.dart';
+// import 'pages_router.dart';
+// void main()=>runApp(MyApp());
+
+// class MyApp extends StatelessWidget {
+//   final Widget child;
+
+//   MyApp({Key key, this.child}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: "Flutter Demo 路由动画",
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home:FirstPage()
+//     );
+//   }
+// }
+
+//保持页面状态
 import 'package:flutter/material.dart';
-import 'pages_router.dart';
+import 'keep_alive_demo.dart';
 void main()=>runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -71,7 +93,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:FirstPage()
+      home:KeepAliveDemo()
     );
   }
 }

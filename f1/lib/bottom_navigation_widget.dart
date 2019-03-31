@@ -30,9 +30,6 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
 
   @override
   Widget build(BuildContext context) {
-    // return Container(
-    //    child: widget.child,
-    // );
     return Scaffold(
       body: listPage[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
